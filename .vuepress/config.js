@@ -7,8 +7,19 @@ module.exports = {
     // base: '/review-notes/',
     markdown: {
         lineNumbers: false, // 代码块显示行号
-        toc: {includeLevel: [2, 3]}
+        toc: {includeLevel: [2, 3]},
+        extendMarkdown: md => {
+        md.set({html: true}),
+        md.use(require("markdown-it-katex"))
+    }
     },
+    head: [
+        ['link', {rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css'}],
+        ['link', {
+            rel: "stylesheet",
+            href: "https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css"
+        }]
+    ],
     themeConfig: {
         displayAllHeaders: false, // 当前活动页面的标题
         lastUpdated: '最后修改时间', // string | boolean
@@ -34,8 +45,12 @@ module.exports = {
         // 默认为 "Edit this page"
         editLinkText: '帮助我们改善此页面'
     },
-    plugins: ['@vuepress/nprogress','@vuepress/medium-zoom',
+    plugins: [
+        '@vuepress/nprogress',
+        '@vuepress/medium-zoom',
         '@vuepress/back-to-top',
+        'vuepress-plugin-janitor',
+        '@vuepress/container',
         '@vuepress/active-header-links', {
             sidebarLinkSelector: '.sidebar-link',
             headerAnchorSelector: '.header-anchor'
