@@ -1,38 +1,42 @@
 [![Build Status](https://travis-ci.org/GourdErwa/review-notes-dev.svg?branch=master)](https://travis-ci.org/GourdErwa/review-notes-dev)
+## 快速开始
+- 为什么有这个项目？   
+用于团队分享学习、复盘笔记资料共享，它是一个**开发性质的项目**，为 [review-notes ](https://github.com/GourdErwa/review-notes) 项目内容开发阶段使用。
+  
+- 在线阅读地址是？   
+单个笔记专栏完成后，在内容经过贡献者多重交叉审核通过后最终正式发布到 [https://review-notes.top/ ](http://review-notes.top/)  
 
-该项目为用于 review-notes 文档内容开发阶段，不能保证内容准确性。  
-某专栏完成后，在内容经过多重交叉审核通过后最终正式发布到 [review-notes](https://github.com/GourdErwa/review-notes)
+- 网上学习资料那么多，为什么还写这些？   
+因为网上是别人写的，我们阅读后知识吸收率太低，这个项目用于自身学习团队分享，主要使用费曼学习法进行，[关于学习方法 ](/about/学习方法.md)。
 
-## 构建环境
-- 该文档使用 [vuepress](https://vuepress.vuejs.org/) 发布 ， 执行 `npm run docs:dev` 本地阅读调试
-- 使用 [Travis CI](https://travis-ci.org/GourdErwa/review-notes-dev) 持续集成，[在线阅读地址](http://dev.review-notes.top/)
+- 在线阅读内容怎么发布的？  
+使用 [vuepress](https://vuepress.vuejs.org/) 发布，使用 [Travis CI](https://travis-ci.org/GourdErwa/review-notes-dev) 持续集成 ，交叉审核地址 [http://dev.review-notes.top ](http://dev.review-notes.top/)
 
-### 编程语言 
-* [Java 基础知识](/language/java-basis/)
-* [Java 并发编程](/language/java-concurrency/)
-* [Scala 基础-语言核心特性](/language/scala-lang-tour/)
+- 本地预览命令    
+执行 `npm run docs:dev` 进入本地开发模式， 默认访问 [localhost:8080](http://localhost:8080/ )
 
-### 技术框架
-* [Flink 入门进阶](/framework/flink-basis/)
-
-### 算法
-* [数据结构](/algorithm/data-structures/)
-    
+## 笔记内容
+- 编程语言 
+    * [Java 并发编程（整理中） ](/language/java-concurrency/)
+    * [Java 虚拟机（JVM)（整理中） ](/language/java-jvm/)
+    * [Scala 基础-语言核心特性（校验中） ](/language/scala-lang-tour/)
+- 技术框架
+    * [Flink 基础（整理中） ](/framework/flink-basis/)
+    * [Redis（整理中） ](/framework/redis/)
+- 算法与设计
+    * [数据结构（整理中） ](/algorithm/data-structures/)
+    * [设计模式（整理中） ](/algorithm/design-patterns/)
+- DevOps
+    * [Git（整理中） ](/devops/git/)
+        
 ## 贡献说明
+阅读 [贡献说明 ](/about/贡献说明.md) ，当前贡献 [计划执行情况 ](https://github.com/GourdErwa/review-notes-dev/projects/2)
 
-|目录|说明|
-|---|---|
-|./$MODULE|模块名称|
-|./$MODULE/_images|开发期间模块引用图片|
-|./$MODULE/_notes|模块内容笔记内容(参考书籍、源图片等内容)|
-|./$MODULE/README.md|模块介绍（默认为模块导言）|
-
-**建议：**
-- 图片命名不可包含空格，中英文之间用“-”连接
-- 图片引用根目录为 `https://raw.githubusercontent.com/$YOU-GITHUB/review-notes-dev/$MODULE/_images/` 
-- 文章内容以二级标题为目录大纲（一级标题与文件名一致，可忽略不写）
-- 内容排版参考 [排版指南](https://github.com/sparanoid/chinese-copywriting-guidelines/blob/master/README.zh-CN.md)
-- 使用排版工具 [Text-Typesetting](https://github.com/CyC2018/Text-Typesetting) 进行排版优化
-
-***
-感谢以下人员对本仓库做出的贡献：[liming199323](https://github.com/liming199323) , [VVvista](https://github.com/VVvista)
+感谢以下人员对本仓库做出的贡献：    
+[liming199323](https://github.com/liming199323) ,
+[VVvista](https://github.com/VVvista) , 
+[yssmars](https://github.com/yssmars) , 
+[yssmars](https://github.com/yssmars) , 
+[cmshome](https://github.com/cmshome) , 
+[tangzhiwen](https://github.com/tangzhiwen) , 
+[monotcoder](https://github.com/monotcoder)

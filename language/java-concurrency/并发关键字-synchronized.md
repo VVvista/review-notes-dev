@@ -1,4 +1,4 @@
-> 专栏原创出处：[源笔记文件 ](https://github.com/GourdErwa/review-notes/tree/master/language/java-concurrency) ，[源码 ](https://github.com/GourdErwa/java-advanced/tree/master/java-concurrency)，转载请附上原文出处链接和本声明。
+> 专栏原创出处：[github-源笔记文件 ](https://github.com/GourdErwa/review-notes/tree/master/language/java-concurrency) ，[github-源码 ](https://github.com/GourdErwa/java-advanced/tree/master/java-concurrency)，转载请附上原文出处链接和本声明。
 
 [[toc]]  
 ## synchronized 实现原理
@@ -151,7 +151,8 @@ Java SE 1.6 为了减少获得锁和释放锁带来的性能消耗，引入了�
 升级为重量级锁时，锁标志的状态值变为“10”，此时 Mark Word 中存储的是指向重量级锁的指针，此时等待锁的线程都会进入阻塞状态。
 
 ### 综述
-整体的锁状态升级流程如下：
+整体的锁状态升级流程如下：   
+无锁->偏向锁->轻量级锁->重量级锁
 
 综上，偏向锁通过对比 Mark Word 解决加锁问题，避免执行 CAS 操作。而轻量级锁是通过用 CAS 操作和自旋来解决加锁问题，避免线程阻塞和唤醒而影响性能。重量级锁是将除了拥有锁的线程以外的线程都阻塞。
 
@@ -174,9 +175,9 @@ Java SE 1.6 为了减少获得锁和释放锁带来的性能消耗，引入了�
 - 锁对象不能为空
 - 作用域不宜过大
 - 避免死锁
-## 总结
-巩固提问：
+## 思考
 - synchronized 的实现原理及应用场景
 - synchronized 在 Java SE 1.6 中减少获得锁和释放锁带来的性能消耗引入的偏向锁、轻量级锁实现机制
+- synchronized 与 volatile 异同点？
 ## 参考
 - 并发编程的艺术

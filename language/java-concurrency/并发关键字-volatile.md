@@ -1,4 +1,4 @@
-> 专栏原创出处：[源笔记文件 ](https://github.com/GourdErwa/review-notes/tree/master/language/java-concurrency) ，[源码 ](https://github.com/GourdErwa/java-advanced/tree/master/java-concurrency)，转载请附上原文出处链接和本声明。
+> 专栏原创出处：[github-源笔记文件 ](https://github.com/GourdErwa/review-notes/tree/master/language/java-concurrency) ，[github-源码 ](https://github.com/GourdErwa/java-advanced/tree/master/java-concurrency)，转载请附上原文出处链接和本声明。
 
 [[toc]]  
 ## volatile 的特性
@@ -223,12 +223,11 @@ public class CheesyCounter {
     }
 }
 ```
-## 总结
-
-巩固提问：
+## 思考
 - volatile 关键字的作用、原理
 - 什么时候选择用 volatile
 - volatile、synchronized、CAS 操作的区别及应用场景
+
 ## 参考
 - 并发编程的艺术
 - [正确使用 Volatile 变量](https://www.ibm.com/developerworks/cn/java/j-jtp06197.html)
