@@ -1,7 +1,7 @@
 module.exports = [
     {
-        title: "并发编程-基础概念",
-        collapsable: true,
+        title: "并发编程-基础",
+        collapsable: false,
         sidebarDepth: 1,
         children: [
             ['内存模型-基础概念', '内存模型-基础概念'],
@@ -13,8 +13,31 @@ module.exports = [
             ['并发关键字-synchronized', '并发关键字-synchronized'],
             ['锁的内存语义', '锁的内存语义'],
             ['并发同步、锁定机制比较', '并发同步、锁定机制比较'],
-            ['锁-死锁问题及解决方案', '死锁问题及解决方案'],
+            ['原子操作类（atomic包）', '原子操作类（atomic包）']
+        ]
+    },
+    {
+        title: "并发编程-锁",
+        collapsable: false,
+        sidebarDepth: 1,
+        children: [
+            ['锁-Lock接口简介', '锁-Lock接口简介'],
+            ['锁-AbstractQueuedSynchronizer介绍', '锁-AbstractQueuedSynchronizer介绍'],
+            ['锁-AbstractQueuedSynchronizer原理', '锁-AbstractQueuedSynchronizer原理'],
+            ['锁-死锁问题及解决方案', '锁-死锁问题及解决方案'],
             ['锁类型总结', '锁类型总结']
+        ]
+    },
+    {
+        title: "并发编程-线程",
+        collapsable: false,
+        sidebarDepth: 1,
+        children: [
+            ['线程简介', '线程简介'],
+            ['线程等待通知机制', '线程等待通知机制'],
+            ['线程关键类-ThreadLocal', '线程关键类-ThreadLocal'],
+            ['线程池简介', '线程池简介'],
+            ['线程池-Executor框架', '线程池-Executor框架']
         ]
     }
     // {
