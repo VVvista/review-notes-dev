@@ -17,9 +17,9 @@ Java 并发编程目录归档
 ## 并发编程-锁篇
 - [Java 锁-Lock接口简介](https://gourderwa.blog.csdn.net/article/details/103670992)
 - [Java 锁-AbstractQueuedSynchronizer介绍](https://gourderwa.blog.csdn.net/article/details/103671031)
-- Java 锁-AbstractQueuedSynchronizer原理（未完成）
-- Java 锁-重入锁（ReentrantLock）（未完成）
-- Java 锁-读写锁（ReentrantReadWriteLock）（未完成）
+- [Java 锁-AbstractQueuedSynchronizer原理](https://gourderwa.blog.csdn.net/article/details/103685083)
+- [Java 锁-重入锁（ReentrantLock）](https://gourderwa.blog.csdn.net/article/details/103685111)
+- [Java 锁-读写锁（ReentrantReadWriteLock）](https://gourderwa.blog.csdn.net/article/details/103688286)
 - Java 锁-读写锁（StampedLock）（未完成）
 - Java 锁相关工具类（LockSupport）（未完成）
 - Java 锁等待通知机制（Condition）（未完成）
@@ -36,8 +36,8 @@ Java 并发编程目录归档
 - Java 并发工具类-CyclicBarrier（未完成）
 
 ## 并发编程-线程篇
-- [Java 线程简介 ](https://gourderwa.blog.csdn.net/article/details/103619448)  
-- [Java 线程等待通知机制（wait、notify）](https://gourderwa.blog.csdn.net/article/details/103619528)
+- [Java 线程简介 ](https://gourderwa.blog.csdn.net/article/details/103619448)
+- [Java 线程等待通知机制（wait）](https://gourderwa.blog.csdn.net/article/details/103619528)
 - [Java 线程关键类-ThreadLocal](https://gourderwa.blog.csdn.net/article/details/103636811)
 - [Java 线程池简介 ](https://gourderwa.blog.csdn.net/article/details/103636830)
 - [Java 线程池-Executor 框架 ](https://gourderwa.blog.csdn.net/article/details/103653384)
