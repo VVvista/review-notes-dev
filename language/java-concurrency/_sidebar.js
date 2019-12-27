@@ -1,6 +1,6 @@
 module.exports = [
     {
-        title: "并发编程-基础",
+        title: "Java 并发编程-基础",
         collapsable: false,
         sidebarDepth: 1,
         children: [
@@ -12,12 +12,25 @@ module.exports = [
             ['并发关键字-volatile', '并发关键字-volatile'],
             ['并发关键字-synchronized', '并发关键字-synchronized'],
             ['锁的内存语义', '锁的内存语义'],
-            ['并发同步、锁定机制比较', '并发同步、锁定机制比较'],
+            ['并发操作比较（CAS、volatile、synchronized、Lock）', '并发操作比较（CAS、volatile、synchronized、Lock）'],
             ['原子操作类（atomic包）', '原子操作类（atomic包）']
         ]
     },
     {
-        title: "并发编程-锁",
+        title: "Java 并发编程-线程",
+        collapsable: false,
+        sidebarDepth: 1,
+        children: [
+            ['线程简介', '线程简介'],
+            ['线程等待通知机制（wait、notify）', '线程等待通知机制（wait、notify）'],
+            ['线程等待操作比较（sleep、wait、park、Condition）', '线程等待操作比较（sleep、wait、park、Condition）'],
+            ['线程关键类-ThreadLocal', '线程关键类-ThreadLocal'],
+            ['线程池简介', '线程池简介'],
+            ['线程池-Executor框架', '线程池-Executor框架'],
+        ]
+    },
+    {
+        title: "Java 并发编程-锁",
         collapsable: false,
         sidebarDepth: 1,
         children: [
@@ -26,20 +39,21 @@ module.exports = [
             ['锁-AbstractQueuedSynchronizer原理', '锁-AbstractQueuedSynchronizer原理'],
             ['锁-重入锁（ReentrantLock）', '锁-重入锁（ReentrantLock）'],
             ['锁-读写锁（ReentrantReadWriteLock）', '锁-读写锁（ReentrantReadWriteLock）'],
+            ['锁相关工具类（LockSupport）', '锁相关工具类（LockSupport）'],
+            ['锁等待通知机制（Condition）', '锁等待通知机制（Condition）'],
             ['锁-死锁问题及解决方案', '锁-死锁问题及解决方案'],
             ['锁类型总结', '锁类型总结']
         ]
     },
     {
-        title: "并发编程-线程",
+        title: "Java 并发编程-容器和工具",
         collapsable: false,
         sidebarDepth: 1,
         children: [
-            ['线程简介', '线程简介'],
-            ['线程等待通知机制（wait）', '线程等待通知机制（wait）'],
-            ['线程关键类-ThreadLocal', '线程关键类-ThreadLocal'],
-            ['线程池简介', '线程池简介'],
-            ['线程池-Executor框架', '线程池-Executor框架']
+            ['等待多线程完成-CountDownLatch', '等待多线程完成-CountDownLatch'],
+            ['同步屏障-CyclicBarrier', '同步屏障-CyclicBarrier'],
+            ['控制并发数的信号量-Semaphore', '控制并发数的信号量-Semaphore'],
+            ['线程交换数据-Exchanger', '线程交换数据-Exchanger']
         ]
     }
 ];
