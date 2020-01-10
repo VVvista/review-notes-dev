@@ -4,7 +4,7 @@
 #### 数据结构-基础篇
 - [数据结构绪论](https://blog.csdn.net/qq_39953750/article/details/103888315)
 - [数据结构 时间空间复杂度计算](https://blog.csdn.net/qq_39953750/article/details/103888473)
-- [数据结构 线性表](https://blog.csdn.net/qq_39953750/article/details/103894730)
+- [数据结构 线性存储结构](https://blog.csdn.net/qq_39953750/article/details/103894730)
 - [数据结构 顺序表和链表](https://blog.csdn.net/qq_39953750/article/details/103895808)
 - [数据结构 栈](https://blog.csdn.net/qq_39953750/article/details/103895944)
 - [数据结构 队列](https://blog.csdn.net/qq_39953750/article/details/103896095)
